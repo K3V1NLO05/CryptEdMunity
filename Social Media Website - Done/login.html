@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+    <nav style="padding-right: 0px;">
+
+        <div class="navbar">
+            <img src="logo.jpeg" alt="your-image-description" style="width: 40px; height: 40px;">
+            <h1 style="color: #7A63FF;">CryptEdMunity</h1>
+            <ul style="justify-content: end;">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="register.html">REGISTER</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 style="color: #7A63FF;">Login Page</h2>
+        <form id="login-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <a href="content.html" id="login-bttn"
+                style="color: #ffffff; background-color: rgb(132, 0, 255); padding: 10px 30px;"> LOGIN </a>
+        </form>
+        <div id="error-msg"></div>
+    </div>
+    <script>
+        const loginForm = document.getElementById('login-form');
+        const errorBox = document.getElementById('error-msg');
+
+        loginForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Here you can add the code to check if the credentials are valid
+            // and redirect the user to the home page
+            // or display an error message in the errorBox
+        });
+    </script>
+</body>
+
+</html>

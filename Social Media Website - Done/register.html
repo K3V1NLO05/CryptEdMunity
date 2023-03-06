@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Register Page</title>
+	<link rel="stylesheet" type="text/css" href="register.css">
+</head>
+
+<body>
+	<nav style="padding-right: 0px;">
+		<div class="navbar">
+			<img src="logo.jpeg" alt="your-image-description" style="width: 50px; height: 50px;">
+			<h1 style="color: #7A63FF;">CryptEdMunity</h1>
+			<ul style="justify-content: end;">
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="login.html">LOGIN</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<h2>Register Page</h2>
+		<form id="register-form">
+			<label for="username">Username</label>
+			<input type="text" id="username" name="username">
+
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email">
+
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password">
+
+			<label for="confirm-password">Confirm Password</label>
+			<input type="password" id="confirm-password" name="confirm-password">
+
+			<a href="content.html" class="btn"
+				style="padding: 10px 20px; background-color: rgb(132, 0, 255); text-decoration: none; color: #FFF; border-radius: 5px;">REGISTER</a>
+		</form>
+		<div id="error-msg"></div>
+	</div>
+	<script src="register.js"></script>
+</body>
+
+</html>
